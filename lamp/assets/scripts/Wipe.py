@@ -16,12 +16,12 @@ LED_BRIGHTNESS = 0     # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 
 # Define functions which animate LEDs in various ways.
-def colorWipe(strip, color, wait_ms=50):
+def colorWipe(strip, color, wait_ms=1):
 	"""Wipe color across display a pixel at a time."""
 	for i in range(strip.numPixels()):
 		strip.setPixelColor(i, color)
 		strip.show()
-		time.sleep(wait_ms/1000.0)
+		time.sleep(wait_ms/10000.0)
 
 # Main program logic follows:
 if __name__ == '__main__':
@@ -33,3 +33,4 @@ if __name__ == '__main__':
 	while True:
 		# Color wipe animations.
 		colorWipe(strip, Color(0,0,0))		#wipe color
+		exit()

@@ -1,21 +1,21 @@
 <?php
 /*settings*/
 if (isset($_POST['Kill'])){exec('sudo pkill python');}
-if (isset($_POST['Wipe'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/Wipe.py');}
+if (isset($_POST['Wipe'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/Wipe.py');}
 
-if (isset($_POST['DayWhite'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/DayWhite.py');}
-if (isset($_POST['DayRed'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/DayRed.py');}
-if (isset($_POST['DayGreen'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/DayGreen.py');}
-if (isset($_POST['DayBlue'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/DayBlue.py');}
-if (isset($_POST['DayNatural'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/DayNatural.py');}
+if (isset($_POST['DayWhite'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/DayWhite.py');}
+if (isset($_POST['DayRed'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/DayRed.py');}
+if (isset($_POST['DayGreen'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/DayGreen.py');}
+if (isset($_POST['DayBlue'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/DayBlue.py');}
+if (isset($_POST['DayNatural'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/DayNatural.py');}
 
-if (isset($_POST['NightWhite'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/NightWhite.py');}
-if (isset($_POST['NightRed'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/NightRed.py');}
-if (isset($_POST['NightGreen'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/NightGreen.py');}
-if (isset($_POST['NightBlue'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/NightBlue.py');}
-if (isset($_POST['NightNatural'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/NightNatural.py');}
+if (isset($_POST['NightWhite'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/NightWhite.py');}
+if (isset($_POST['NightRed'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/NightRed.py');}
+if (isset($_POST['NightGreen'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/NightGreen.py');}
+if (isset($_POST['NightBlue'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/NightBlue.py');}
+if (isset($_POST['NightNatural'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/NightNatural.py');}
 
-if (isset($_POST['Rainbow'])){exec('sudo pkill python ; sudo python /var/www/html/lamp/assets/scripts/Rainbow.py');}
+if (isset($_POST['Rainbow'])){exec('sudo pkill python && sudo python /var/www/html/lamp/assets/scripts/Rainbow.py');}
 ?>
 
 <!doctype html>
@@ -58,48 +58,44 @@ if (isset($_POST['Rainbow'])){exec('sudo pkill python ; sudo python /var/www/htm
         <div id="body-block">
             <div id="links">
               <table>
-								<td>
-                	<tr class="section">
-										<p class="link-cats">Settings</p>
-                  	<button class="button" name="Kill">Kill Python</button>
-                  	<button class="button" name="Wipe">Turn Off</button>
-									</tr>
-								<td>
+		<td>
+			<tr class="section">
+				<p class="link-cats">Settings</p>
+				<button onClick="window.location.reload();" class="button" name="Kill">Kill Python</button>
+				<button onClick="window.location.reload();" class="button" name="Wipe">Turn Off</button>
+			</tr>
+		<td>
 
-								<td>
-									<tr>
-										<p class="link-cats">Daytime</p>
-	                  <button class="button" name="DayWhite">White</button>
-										<button class="button" name="DayRed">Red</button>
-										<button class="button" name="DayGreen">Green</button>
-										<button class="button" name="DayBlue">Blue</button>
-										<button class="button" name="DayNatural">Natural</button>
-									</tr>
-								</td>
+		<td>
+			<tr>
+				<p class="link-cats">Daytime</p>
+				<button onClick="window.location.reload();" class="button" name="DayWhite">White</button>
+				<button onClick="window.location.reload();" class="button" name="DayRed">Red</button>
+				<button onClick="window.location.reload();" class="button" name="DayGreen">Green</button>
+				<button onClick="window.location.reload();" class="button" name="DayBlue">Blue</button>
+				<button onClick="window.location.reload();" class="button" name="DayNatural">Natural</button>
+			</tr>
+		</td>
 
-								<td>
-									<tr>
-										<p class="link-cats">Night-time</p>
-										<button class="button" name="NightWhite">White</button>
-										<button class="button" name="NightRed">Red</button>
-										<button class="button" name="NightGreen">Green</button>
-										<button class="button" name="NightBlue">Blue</button>
-										<button class="button" name="NightNatural">Natural</button>
-									</tr>
-								</td>
+		<td>
+			<tr>
+				<p class="link-cats">Night-time</p>
+				<button onClick="window.location.reload();" class="button" name="NightWhite">White</button>
+				<button onClick="window.location.reload();" class="button" name="NightRed">Red</button>
+				<button onClick="window.location.reload();" class="button" name="NightGreen">Green</button>
+				<button onClick="window.location.reload();" class="button" name="NightBlue">Blue</button>
+				<button onClick="window.location.reload();" class="button" name="NightNatural">Natural</button>
+			</tr>
+		</td>
 
-								<td>
-									<tr>
-										<p class="link-cats">Party</p>
-										<button class="button" name="Rainbow">Rainbow</button>
-										<button class="button" name="White">White</button>
-										<button class="button" name="White">White</button>
-										<button class="button" name="White">White</button>
-										<button class="button" name="White">White</button>
-									</tr>
-								</td>
+		<td>
+			<tr>
+				<p class="link-cats">Party</p>
+				<button onClick="window.location.reload();" class="button" name="Rainbow">Rainbow</button>
+			</tr>
+		</td>
               </table>
-							<center><a class="link"href="index.php"><img src="/lamp/assets/icons/apple-icon-114x114.png"><a></center>
+		<center><a class="link"href="index.php"><img src="/lamp/assets/icons/apple-icon-114x114.png"><a></center>
             </div>
         </div>
   	</form>
