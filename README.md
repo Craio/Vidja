@@ -9,26 +9,28 @@ Eventually use this to make an install script. In the meantime, as follows;
 
 **Setup ws2812b control**   
 	- Run full update and upgrade  `sudo apt update && sudo apt full-upgrade`    
-	- put ssh key in `~/.ssh`
-	- `chmod 400 ~/.ssh/id_rsa`
+	- put ssh key in `~/.ssh`    
+	- `chmod 400 ~/.ssh/id_rsa`    
 	- `git clone https://github.com/jgarff/rpi_ws281x`    
 	- `git clone git@github.com:Craio/vidja.git `   
-	- `sudo apt install scons -y`   
-	- `cd rpi_ws281x`   
+	- `sudo apt install scons swig -y`   
+	- `cd ~/rpi_ws281x`   
 	- `nano main.c` to 240 height x 1 width    
 	- `scons`    
 	- `cd python`    
-	- `sudo python ./setup install`    
-	- Test with `sudo python ~/vidja/assets/scripts/Rainbow.py`    
-	- Test with `sudo python ~/vidja/assets/scripts/Wipe.py`     
+	- `sudo python ./setup.py install`    
+	- Test with `sudo python ~/vidja/lamp/assets/scripts/Rainbow.py`    
+	- Test with `sudo python ~/vidja/lamp/assets/scripts/Wipe.py`     
 
 **Setup webserver control**   
 	- `sudo apt install apache2 php libapache2-mod-php -y`    
 	- `sudo rm /var/www/html/index.html`    
 	- `cd ~/vidja`    
-	- `sudo ln -s * /var/www/html`    
+	- `sudo cp -r * /var/www/html`    
 	- `sudo visudo /etc/sudoers`    
 	- Add `www-data ALL=(ALL) NOPASSWD: ALL` at the bottom    
+	- `cd /var/www/html/lamp/assets/scrtips/`    
+	- `sudo chown www-data:www-data *`
 	- `sudo reboot now`    
 	- Check ip with `ifconfig`, point browser to address
 
