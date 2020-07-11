@@ -28,7 +28,7 @@ Eventually use this to make an install script. In the meantime, as follows;
 	- `sudo visudo /etc/sudoers`    
 	- Add `www-data ALL=(ALL) NOPASSWD: ALL` at the bottom    
 	- `sudo reboot now`    
-
+	- Check ip with `ifconfig`, point browser to address
 
 ## Links
 
