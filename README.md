@@ -29,7 +29,7 @@ Eventually use this to make an install script. In the meantime, as follows;
 	- `sudo cp -r * /var/www/html`    
 	- `sudo visudo /etc/sudoers`    
 	- Add `www-data ALL=(ALL) NOPASSWD: ALL` at the bottom    
-	- `cd /var/www/html/lamp/assets/scrtips/`    
+	- `cd /var/www/html/lamp/assets/scripts/`    
 	- `sudo chown www-data:www-data *`     
 	- `sudo reboot now`    
 	- Check ip with `ifconfig`, point browser to address      
