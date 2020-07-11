@@ -9,8 +9,10 @@ Eventually use this to make an install script. In the meantime, as follows;
 
 **Setup ws2812b control**   
 	- Run full update and upgrade  `sudo apt update && sudo apt full-upgrade`    
+	- put ssh key in `~/.ssh`
+	- `chmod 400 ~/.ssh/id_rsa`
 	- `git clone https://github.com/jgarff/rpi_ws281x`    
-	- `git clone https://github.com/craio/vidja`   
+	- `git clone git@github.com:Craio/vidja.git `   
 	- `sudo apt install scons -y`   
 	- `cd rpi_ws281x`   
 	- `nano main.c` to 240 height x 1 width    
