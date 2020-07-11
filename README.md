@@ -1,6 +1,6 @@
 # vIdja smart lamp
 
-Smart lamp project making use of [Ikea vidja lamp](http://www.ikea.com/gb/en/products/lighting/floor-lamps/vidja-floor-lamp-white-art-80309203/), Raspberry Pi, ws2812b led strip, and apache web server to control via browser.
+Smart lamp project making use of [ikea vidja lamp](http://www.ikea.com/gb/en/products/lighting/floor-lamps/vidja-floor-lamp-white-art-80309203/), Raspberry Pi, ws2812b led strip, and apache web server to control via browser.
 
 
 ## Installation
@@ -30,13 +30,13 @@ Eventually use this to make an install script. In the meantime, as follows;
 	- `sudo visudo /etc/sudoers`    
 	- Add `www-data ALL=(ALL) NOPASSWD: ALL` at the bottom    
 	- `cd /var/www/html/lamp/assets/scrtips/`    
-	- `sudo chown www-data:www-data *`
+	- `sudo chown www-data:www-data *`     
 	- `sudo reboot now`    
-	- Check ip with `ifconfig`, point browser to address
+	- Check ip with `ifconfig`, point browser to address      
 
 ## Links
 
-I've used bits from all these sources to make this project, they did the hard work.
+I've used bits from all these sources, and many others to make this project, they did the hard work.
 - https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels
 - https://tutorials-raspberrypi.com/connect-control-raspberry-pi-ws2812-rgb-led-strips/
 - https://learn.adafruit.com/neopixels-on-raspberry-pi/overview
