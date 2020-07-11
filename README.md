@@ -1,4 +1,4 @@
-# vIdja smart lamp
+# vidja smart lamp
 
 Smart lamp project making use of [ikea vidja lamp](http://www.ikea.com/gb/en/products/lighting/floor-lamps/vidja-floor-lamp-white-art-80309203/), Raspberry Pi, ws2812b led strip, and apache web server to control via browser.
 
