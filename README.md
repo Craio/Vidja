@@ -48,3 +48,4 @@ I've used bits from all these sources, and many others to make this project, the
 - Write install script
 - Rework web control
 - Add wiring documentation
+- check blackisting audio
